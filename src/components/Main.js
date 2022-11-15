@@ -15,7 +15,7 @@ function Main() {
       {
         apis.filter(api => api.Auth === "apiKey").map(api => {
           return (
-            <p>
+            <p key={api.Link}>
               <a href={api.Link}>{api.API}</a>
             </p>
           )
